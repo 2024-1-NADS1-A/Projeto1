@@ -1,0 +1,156 @@
+PROPOSTA DE PROJETO DE EXTENSÃO 
+
+
+1. DADOS GERAIS 
+
+Título do Projeto
+
+Inserir os dados neste espaço. Orientações: descrição sucinta englobando o tema do projeto.
+
+
+Integrantes da equipe
+Identificar o nome completo e o RA dos participantes do projeto
+Nome: 
+	RA:
+Rodrigo Campos Barbosa da Cruz
+	24026578
+Gustavo Enzo vieira Alves 
+	24026561
+Deivid Gomes de Oliveira
+	24045839
+Eduardo Sturm
+	23025010
+
+Professor responsável
+Victor Quiroz e Adriano Felix Valente
+
+Curso
+Análise e Desenvolvimento de Sistemas FECAP 2024
+
+Linha de atuação
+Identificar com ? uma ou mais linhas de atuação conforme projeto pedagógico de curso. 
+- Projeto Interdisciplinar: Jogos Digitais  ?	
+
+
+Objetivos do Desenvolvimento Sustentável
+Identificar com ? um ou mais ODS impactado(s) pelo projeto
+1- Erradicação da Pobreza
+2- Fome Zero
+3- Saúde e Bem Estar
+4- Educação de Qualidade
+5- Igualdade de Gênero
+6- Água Potável e Saneamento ?
+7- Energia Limpa e Acessível
+8- Trabalho Decente e Crescimento Econômico
+9- Indústria, Inovação e Infraestrutura	10- Redução das Desigualdades 
+11-Cidades e Comunidades Sustentáveis
+12- Consumo e Produção Responsáveis
+13- Ação Contra a Mudança Global do Clima
+14- Vida na Água ?
+15- Vida Terrestre
+16- Paz, Justiça e Instituições Eficazes
+17- Parcerias e Meios de Implementação
+
+
+
+
+Tipo de projeto
+Identificar com ? o tipo de projeto. 
+Atividade de Extensão não implementado na prática (proposta de intervenção)
+Atividade de Extensão implementado na prática (intervenção executada) ?
+Tema gerador
+O tema do meu trabalho gira em torno da medição do índice de PH da água, visando melhorar aqualidade da mesma, com auxílio do Blynk, para emitir gráficos em tempo real.
+ Produto decorrente do projeto (opcional dependendo do tipo de projeto)
+Os componentes utilizados para o produto final foram: Arduino, Sensor de pH,  Sensor de temperatura, aquário de 10l, display LCD, jumper macho/fêmea, conectores, fonte de alimentação. 
+ 
+
+
+2. IDENTIFICAÇÃO DO CENÁRIO DE INTERVENÇÃO E HIPÓTESES DE SOLUÇÃO
+Local (cenário) previsto para a implementação do projeto
+Podemos utilizar o nosso trabalho até em casos simples e domésticos, como por exemplo um
+aquário, já que para cada tipo de peixe que há no aquário, necessita-se de um nível de PH
+especifico. 
+ 
+
+
+Público-alvo a ser atendido pelo projeto
+O público-alvo a ser atendido pelo projeto, seria o público que como grande a maioria dos
+adultos por exemplo, não tem tempo suficiente para verificar a água de seu aquário e por muitas
+vezes acabam perdendo seus peixes por um descuido desses, com esse medidor interligago ao celular, enviando dados em tempo real ou mostrando ate em seu display, facilitaria muito
+mais o controle dessa água, salvando a vida de diversos peixes.
+
+Apresentação do(s) problema(s) observado(s) e delimitação do objeto de estudo e intervenção
+Os problemas encontrados até o presente momento estão resumidos em falta de horário parauma reunião com os integrantes do grupo, já que todos trabalham e tem seus horários bemapertados, impossibilitando um debate semanalmente por exemplo aos fins de semana comomuitos grupos estão fazendo.
+
+Definição de hipóteses para a solução do problema observado
+A solução encontrada até o presente momento foi a de debater os assuntos importantes durante
+os intervalos da aula ou até mesmo durante o dia por meio dos grupos nas redes sociais.
+
+
+3 DESCRIÇÃO DO PROJETO
+
+
+Resumo
+O projeto é um medidor de pH da água e de temperatura, para que possamos monitorar o pH da água tendo uma solução acessível e de baixo custo.
+
+Introdução
+Pessoas do mundo inteiro poderão ter como cuidar da sua água de forma fácil e acessível. Com
+o nosso medidor de pH da água, utilizando Arduino, isso se torna possível. Este dispositivo
+simples torna muito eficaz e simples a forma como é permitido a verificação da do pH de forma
+rápida e precisa. Com ele, você pode garantir que a água que você bebe, que seus peixes nadam
+ou que é usada em processos industriais esteja sempre nos níveis adequados.
+
+Objetivos
+Desenvolver um dispositivo para medir o pH da água utilizando um Arduino, proporcionando
+uma solução acessível e eficiente para monitoramento da qualidade da água em diferentes
+aplicações.
+
+Métodos 
+Os métodos a serem utilizados são simples, iremos utilizar Arduino, sensor de pH, display LCD, o blynk, Arduino e a esp32. 
+Iremos conectar o sensor de pH ao Arduino utilizando cabos, conectar o display LCD para exibir
+os valores de pH, conectar um módulo de leitura ADC para converter os sinais analógicos do
+sensor em sinais digitais para o Arduino.
+
+Resultados (ou resultados esperados)
+É esperado atingir resultados de fácil acesso as pessoas, visando facilitar o acesso à informação
+sobre a qualidade da água, contribuindo para a preservação ambiental e para a saúde pública.
+
+Considerações finais
+O desenvolvimento do nosso medidor de pH da água com Arduino é um passo em direção a
+soluções que sejam acessíveis e eficazes para o monitoramento da qualidade da água. Este
+projeto é uma maneira prática e fácil de medir pH e sua temperatura.
+O projeto nos possibilitou conhecer a ferramenta do blynk, integrando o celular ao trabalho, trazendo mais ''conforto'' ao usuário final.
+
+Referências 
+APHA; AWWA; WEF. Standard Methods for the Examination of Water and Wastewater. 23. ed. Washington: American Public Health Association, 2017.
+
+FERREIRA, Ana Paula; SILVA, João Carlos. Métodos de Medição de pH em Amostras de Água: Revisão e Comparação. Revista de Química Analítica, São Paulo, v. 32, n. 2, p. 123-130, 2020.
+
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 13734: Medição do pH em águas – Método Potenciométrico. Rio de Janeiro, 2017.
+
+
+
+
+
+
+
+ANEXO I
+
+Medir o pH e a temperatura da água é crucial por várias razões, especialmente em contextos ambientais, industriais e de saúde pública. Através do ph4m será possível ter esse medidor em suas mãos de forma simples e bem prática.
+
+
+Revistas 	Link:
+CAMINHO ABERTO: REVISTA DE EXTENSÃO DO IFSC	https://periodicos.ifsc.edu.br/index.php/caminhoaberto/index
+EXTRAMUROS 	https://www.periodicos.univasf.edu.br/index.php/extramuros
+REVISTA BRASILEIRA DE EXTENSÃO UNIVERSITÁRIA	https://periodicos.uffs.edu.br/index.php/RBEU/
+REVISTA CIÊNCIA EM EXTENSÃO	https://ojs.unesp.br/index.php/revista_proex/index
+REVISTA DE CULTURA E EXTENSÃO	https://www.revistas.usp.br/rce
+REVISTA EXTENSÃO EM AÇÃO	http://periodicos.ufc.br/extensaoemacao
+EXPRESSA EXTENSÃO (UFPEL)	https://periodicos.ufpel.edu.br/ojs2/index.php/expressaextensao/index
+
+Outras revistas podem ser consultadas em: 
+https://www.ufrgs.br/ppggeo/ppggeo/wp-content/uploads/2019/12/QUALIS-NOVO-1.pdf 
+
+Documentos FECAP	
+Regulamento das Atividade de Extensão – Bacharelado em Ciência da Computação	
+
