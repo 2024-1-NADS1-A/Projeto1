@@ -12,15 +12,15 @@
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/"> Victor Bruno Alexander Rosetti de Quiroz</a>, <a href="https://www.linkedin.com/in/adriano-valente-534576135/">Adriano Valente</a>
 
-## Descrição
+## Imagem do projeto:
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="https://github.com/2024-1-NADS1-A/Projeto1/assets/169500116/dbbe071d-1381-47a8-8e41-343d96499311" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
-. O principal objetivo é desenvolver e implementar um sistema capaz de controlar e manter os níveis ideais de pH e temperatura na água do aquário.
+ O principal objetivo é desenvolver e implementar um sistema capaz de controlar e manter os níveis ideais de pH e temperatura na água do aquário.
 <br><br>
 Meu projeto ajuda a monitorar o aquário enviando notificações das variações para as pessoas que o possuem.
 <br><br>
@@ -45,56 +45,55 @@ Meu projeto ajuda a monitorar o aquário enviando notificações das variações
 
 ## 🛠 Instalação
 
-<b>Android:</b>
+<b>🛠Hardware:</b>
+Arduino Uno;
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+Esp 32;
 
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+Protoboard;
 
-<b>Windows:</b>
+Aquário de aproximadamente 10 litros;
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Snsor de temperatura;
 
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+Sensor de PH;
 
-<b>HTML:</b>
+Display lcd;
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Jumpers macho e fêmea.
+
+
+<b>🖥️Software:</b>
+
+Blynk
+
+Arduino IDE
+
+
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+Acesse o site https://www.arduino.cc/en/software e faça o download com base no seu sistema operacional.
 
-Para abrir este projeto você necessita das seguintes ferramentas:
+Após a instalação, é necessário instalar drivers para a esp32 e para o blynk. Clicando em board, basta digitar ''esp32'' e instalar.
 
--<a href="https://godotengine.org/download">GODOT</a>
+Com o blynk não é diferente, instale a biblioteca Blynk usando o gerenciador de biblioteca integrado no Arduino IDE
+Para instalar uma nova biblioteca em seu Arduino IDE você pode usar o Library Manager (disponível na versão 1.6.2 do IDE). Abra o IDE e clique no menu "Sketch" e depois em Incluir Biblioteca > Gerenciar Bibliotecas.
+Em seguida, o Gerenciador de Bibliotecas será aberto e você encontrará uma lista de bibliotecas que já estão instaladas ou prontas para instalação. Procure pela biblioteca Blynk e na seleção de versão escolha a versão mais recente até o momento.
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+
 
 ## 🗃 Histórico de lançamentos
 
-A cada atualização os detalhes devem ser lançados aqui.
 
 * 0.2.1 - 13/05/2024
     * MUDANÇA: Erro no sensor de PH, por isso utilizaremos o de temperatura junto um display e um passo a passo de como seria caso o sensor de ph estivesse funcionando.
 * 0.2.0 - 10/05/2024
     * Testes finais com o medidor de PH, junto com a esp e o sensor de temperatura.
-* 0.1.1 - 10/01/2022
-    * 
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
+* 0.1.1 - 10/05/2024
+    * Organização e separação do que cada um irá executar nessa reta final.
+* 0.1.0 - 19/04/2024
+    * Compra de todos os materiais que iremos utilizar.
 * 0.0.1 - 15/03/2024
     * Iniciação do projeto.
 
@@ -106,8 +105,8 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+1. <https://www.techtonions.com/esp32-sending-alert-message-to-whatsapp>
+2. <https://www.youtube.com/watch?v=jsO33tCvF9A>
+3. <https://www.nvoip.com.br/blog/saiba-o-que-e-api-de-comunicacao/>
+4. <https://www.nvoip.com.br/blog/saiba-o-que-e-api-de-comunicacao/>
+
