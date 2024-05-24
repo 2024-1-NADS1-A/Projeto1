@@ -1,0 +1,133 @@
+#define BLYNK_TEMPLATE_ID "TMPL23a3o9sjM"
+#define BLYNK_TEMPLATE_NAME "Sensor de temperatura"
+#define BLYNK_AUTH_TOKEN "w3RXkNYk645fdSOiQRLVY1hOgRd9_BdA"
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+
+// Defina o pino de dados para o sensor DS18B20
+const int oneWireBus = 4;  // GPIO 4
+
+// Defina o pino do LED VERMELHO
+const int LED_VERMELHO = 18; // GPIO 18
+
+// Defina o pino do buzzer
+const int BUZZER_PIN = 19; // GPIO 19
+
+// Crie uma instância OneWire
+OneWire oneWire(oneWireBus);
+
+// Passe a referência do OneWire para DallasTemperature
+DallasTemperature sensors(&oneWire);
+
+// Seu Auth Token do Blynk
+char auth[] = BLYNK_AUTH_TOKEN;
+
+// Credenciais da sua rede WiFi
+const char* ssid = "teste";  // Substitua por seu SSID
+const char* pass = "123456789";  // Substitua pela sua senha
+
+// Endereço I2C do display LCD
+const int I2C_ADDR = 0x27;  // Endereço I2C do módulo LCD (pode variar)
+
+// Tamanho do LCD (16 colunas x 2 linhas)
+const int LCD_COLS = 16;
+const int LCD_ROWS = 2;
+
+// Cria uma instância de LiquidCrystal_I2C
+LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLS, LCD_ROWS);
+
+void setup() {
+  // Inicia a comunicação serial
+  Serial.begin(115200);
+
+  // Inicie o sensor DS18B20
+  sensors.begin();
+  
+  // Verifique se há sensores conectados
+  if (sensors.getDeviceCount() == 0) {
+    Serial.println("Nenhum sensor encontrado");
+  } else {
+    Serial.print("Sensores encontrados: ");
+    Serial.println(sensors.getDeviceCount());
+  }
+
+  // Conecta ao Wi-Fi e ao Blynk
+  Blynk.begin(auth, ssid, pass);
+
+  // Inicia o barramento I2C com SDA no pino 22 e SCL no pino 21
+  Wire.begin(22, 21);
+
+  // Inicia o display LCD
+  lcd.init();
+  lcd.backlight(); // Liga a luz de fundo (backlight)
+  lcd.clear();     // Limpa o LCD
+  
+  // Define os pinos como saída
+  pinMode(LED_VERMELHO, OUTPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+}
+
+void loop() {
+  // Mantém a conexão com o Blynk
+  Blynk.run();
+
+  // Solicite a leitura da temperatura
+  sensors.requestTemperatures();
+  
+  // Leitura da temperatura em Celsius
+  float temperatureC = sensors.getTempCByIndex(0);
+  
+  // Verifique se a leitura é válida
+  if (temperatureC != DEVICE_DISCONNECTED_C) {
+    Serial.print("Temperatura: ");
+    Serial.print(temperatureC);
+    Serial.println(" °C");
+
+    // Envie a temperatura para o Blynk
+    Blynk.virtualWrite(V0, temperatureC); // Supondo que você tenha um widget no V0 para a temperatura
+
+    // Escreve a temperatura no LCD
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Temp: ");
+    lcd.print(temperatureC);
+    lcd.print(" C");
+    
+    // Verifica se a temperatura está acima de 26°C
+    if (temperatureC > 26) {
+      // Faz o LED VERMELHO piscar
+      digitalWrite(LED_VERMELHO, HIGH);
+      delay(5000);
+      digitalWrite(LED_VERMELHO, LOW);
+      delay(500);
+    } else {
+      // Mantém o LED VERMELHO desligado
+      digitalWrite(LED_VERMELHO, LOW);
+    }
+    
+    // Verifica se a temperatura está abaixo de 20°C ou acima de 26°C para ativar o buzzer
+    if (temperatureC < 20 || temperatureC > 26) {
+      digitalWrite(BUZZER_PIN, HIGH); // Ativa o buzzer
+    } else {
+      digitalWrite(BUZZER_PIN, LOW); // Desativa o buzzer
+    }
+  } else {
+    Serial.println("Erro: Sensor desconectado");
+
+    // Escreve uma mensagem de erro no LCD
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Erro: Sensor");
+    lcd.setCursor(0, 1);
+    lcd.print("desconectado");
+  }
+
+  // Aguarde 1 segundo antes da próxima leitura
+delay(1000);
+}
