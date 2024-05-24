@@ -8,7 +8,7 @@
 
 ## PH4M
 
-## Integrantes: <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes</a>, <a href="https://www.linkedin.com/in/rodrigo-cruz-b3885116a/">Rodrigo Cruz</a>, <a href="https://www.linkedin.com/in/eduardo-sturm-599a45223">Eduardo Sturm </a>, <a href="https://www.linkedin.com/in/victorbarq/">Gustavo Enzo Vieira Alvesi</a>
+## Integrantes: <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes</a>, <a href="https://www.linkedin.com/in/rodrigo-cruz-b3885116a/">Rodrigo Cruz</a>, <a href="https://www.linkedin.com/in/eduardo-sturm-599a45223">Eduardo Sturm </a>, <a href="https://www.linkedin.com/in/gustavo-enzo-vieira-alves-4a1b0330a">Gustavo Enzo Vieira Alvesi</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/"> Victor Bruno Alexander Rosetti de Quiroz</a>, <a href="https://www.linkedin.com/in/adriano-valente-534576135/">Adriano Valente</a>
 
@@ -16,8 +16,7 @@
 
 <p align="center">
 <img src="https://github.com/2024-1-NADS1-A/Projeto1/assets/169500116/dbbe071d-1381-47a8-8e41-343d96499311" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
+  Projeto realizado por: <a href="https://www.linkedin.com/in/rodrigo-cruz-b3885116a">Rodrigo Cruz</a>, <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes</a>, <a href="https://www.linkedin.com/in/eduardo-sturm-599a45223">Eduardo Sturm </a>, <a href="https://www.linkedin.com/in/gustavo-enzo-vieira-alves-4a1b0330a">Gustavo Enzo Vieira Alvesi</a>
 
 
  O principal objetivo é desenvolver e implementar um sistema capaz de controlar e manter os níveis ideais de pH e temperatura na água do aquário.
